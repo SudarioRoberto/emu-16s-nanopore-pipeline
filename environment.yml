@@ -1,0 +1,13 @@
+name: emu_16s_pipeline
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - chopper=0.12.0        # Quality/length filtering for Nanopore reads
+  - seqkit=2.13.0         # FASTQ statistics and manipulation
+  - cutadapt=4.9          # Primer/adapter trimming
+  - emu=3.6.2             # Taxonomic classification (EM algorithm + minimap2)
+  - pigz                  # Parallel gzip (speeds up compression)
+  - bc                    # Calculator for retention % in scripts

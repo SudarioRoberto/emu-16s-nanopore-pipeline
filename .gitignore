@@ -1,0 +1,26 @@
+# Data files (too large for git)
+data/raw_runs/
+data/concatenated/
+data/filtered/
+data/trimmed/
+data/emu_db/
+*.fastq
+*.fastq.gz
+*.fasta
+
+# Results (regenerable)
+results/emu_per_sample/
+results/emu_combined/
+
+# Logs
+logs/*.out
+logs/*.log
+logs/*.json
+logs/pipeline_log.tsv
+
+# Conda
+.conda/
+
+# OS
+.DS_Store
+Thumbs.db
