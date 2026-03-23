@@ -1,22 +1,21 @@
-# Data files (too large for git)
+# Full dataset directories (too large for git)
 data/raw_runs/
 data/concatenated/
 data/filtered/
 data/trimmed/
 data/emu_db/
-*.fastq
-*.fastq.gz
-*.fasta
 
-# Results (regenerable)
+# Keep example sample data tracked (override *.fastq.gz for example_sample/)
+!data/example_sample/
+!data/example_sample/**
+
+# Results - keep combined and summary files
 results/emu_per_sample/
-results/emu_combined/
 
-# Logs
+# Logs - keep pipeline_log.tsv, skip verbose per-step logs
 logs/*.out
 logs/*.log
 logs/*.json
-logs/pipeline_log.tsv
 
 # Conda
 .conda/
